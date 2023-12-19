@@ -34,3 +34,11 @@
 //16. key in list =>
     //react doc says it is bad practice to use index as a key in loop use unique id
     //not using keys (not acceptable) <<< index as key <<<<<< unique id (best practice)
+//17. there are two type of export =>
+    //export default component vs export <variable>
+//18. useState hook =>
+    //react rerender component when useState variable update
+//19. react fiber architecture 
+    //virtual dom
+    //reconciliation algo
+    //diff algo
