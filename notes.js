@@ -42,3 +42,5 @@
     //virtual dom
     //reconciliation algo
     //diff algo
+//20. conditional Rendering => 
+    //rendering on a condition 
