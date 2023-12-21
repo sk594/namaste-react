@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
@@ -26,7 +27,7 @@ const Body = () => {
     setListOfRestaurants(
       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilterdRestaurant(listOfRestaurants)
+    setFilterdRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   };
 
   //conditional Rendering
@@ -51,10 +52,13 @@ const Body = () => {
             
           <button
             onClick={() => {
-                console.log(searchText);
+                console.log(searchText, listOfRestaurants);
 
-                const filterdRestaurant = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
-                    );
+                const filterdRestaurant = listOfRestaurants.filter((res) => {
+                    console.log(res.info.name.toLowerCase().includes(searchText.toLowerCase()),res.info.name.toLowerCase(),searchText)
+                 return   res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                });
+                console.log("filterdRestaurant==>",filterdRestaurant)
                 setFilterdRestaurant(filterdRestaurant)
             }}
           >Search</button>
@@ -66,7 +70,7 @@ const Body = () => {
               (res) => res.info.avgRating > 4
             );
             console.log("from filter");
-            setListOfRestaurants(filteredList);
+            setFilterdRestaurant(filteredList);
           }}
         >
           Top Rated Restaurant
@@ -75,7 +79,7 @@ const Body = () => {
       <div className="search">Search</div>
       <div className="res-container">
         {filterdRestaurant.map((restaurant, index) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          <Link to={"/restaurants/"+restaurant.info.id} key={restaurant.info.id}><RestaurantCard  resData={restaurant} /></Link>
         ))}
       </div>
     </div>
