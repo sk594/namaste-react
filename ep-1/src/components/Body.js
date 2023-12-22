@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
-import { resList } from "../utils/mockData";
+// import { resList } from "../utils/mockData";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -34,6 +35,13 @@ const Body = () => {
   // if(listOfRestaurants.length == 0){
   //     return <Shimmer />
   // }
+
+  console.log("listOfRestaurants===>",listOfRestaurants)
+
+  const onlineStatus = useOnlineStatus();
+  console.log("onlineStatus===>",onlineStatus)
+  if(onlineStatus === false) return <h1>Look like you're offline!! Please check your internet connection</h1>
+
 
   return listOfRestaurants.length == 0 ? (
     <Shimmer />

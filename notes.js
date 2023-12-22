@@ -84,4 +84,17 @@ import { useEffect } from "react";
             // second Child component did mount =>
         // Parent component did mount
 
-    //componentDidMount usecase ?
+
+
+/**
+24. Chunking
+    Code Splitting
+    Dynamic Bundling
+    Lazy loading
+    on demand loading
+    Dynamic import
+
+    lazy 
+    Suspense
+    fallback
+   */    
