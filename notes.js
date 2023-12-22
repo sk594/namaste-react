@@ -97,4 +97,11 @@ import { useEffect } from "react";
     lazy 
     Suspense
     fallback
+
+
+25. Scss vs css
+    tailwind css
+    postcss
+
+26. Higher order component 
    */    
