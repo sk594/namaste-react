@@ -103,5 +103,20 @@ import { useEffect } from "react";
     tailwind css
     postcss
 
-26. Higher order component 
+26. Higher order component  => take a component and return a component
+
+
+27. accordion , position, justify-content, flex
+
+28. controlled vs uncontrolled component
+
+29. lifting state up
+
+30. props drilling
+
+31. context api
+
+    how to use context data in class base component => UserContext.Consumer
+    UserContext.provider
+    Nested UserContext
    */    
