@@ -119,4 +119,17 @@ import { useEffect } from "react";
     how to use context data in class base component => UserContext.Consumer
     UserContext.provider
     Nested UserContext
+
+
+32. Redux Toolkit =>
+    - Install @reduxjs/toolkit and react-redux
+    - Build our store
+    - Connect our store to our app
+    - Slice (cardSlice)
+    - dispatch(action)
+    - Selector
+
+    => Redux internal use Immer npm
+
+    => Redux dev tool extension
    */    
