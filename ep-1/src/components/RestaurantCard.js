@@ -1,11 +1,15 @@
 import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = ({ resData }) => {
+  // console.log("resData===>", resData);
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } =
     resData?.info;
 
   return (
-    <div className="m-4 p-4 bg-gray-300 w-[200px] rounded-lg bg-gray-50 hover:bg-gray-400">
+    <div
+      data-testid="resCard"
+      className="m-4 p-4 bg-gray-300 w-[200px] rounded-lg bg-gray-50 hover:bg-gray-400"
+    >
       <img
         className="rounded-lg"
         alt="res-logo"
@@ -21,16 +25,17 @@ const RestaurantCard = ({ resData }) => {
   );
 };
 
-
 export const withPromtedLable = (RestaurantCard) => {
-    return (props) => {
-        return (
-            <div>
-                <label className="absolute bg-black text-white m-2 p-2 rounded-lg">Promoted</label>
-                <RestaurantCard {...props}/>
-            </div>
-        )
-    }
-}
+  return (props) => {
+    return (
+      <div>
+        <label className="absolute bg-black text-white m-2 p-2 rounded-lg">
+          Promoted
+        </label>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
 
 export default RestaurantCard;

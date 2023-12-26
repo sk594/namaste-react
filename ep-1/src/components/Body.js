@@ -23,10 +23,10 @@ const Body = () => {
     );
     const json = await data.json();
 
-    console.log(json);
-    console.log(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+    // console.log(json);
+    // console.log(
+    //   json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // );
     setListOfRestaurants(
       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -56,6 +56,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black"
             value={searchText}
             onChange={(e) => {
@@ -66,21 +67,13 @@ const Body = () => {
           <button
             className="px-4 py-2 bg-green-100 m-4 rounded-lg"
             onClick={() => {
-              console.log(searchText, listOfRestaurants);
+              // console.log(searchText, listOfRestaurants);
 
               const filterdRestaurant = listOfRestaurants.filter((res) => {
-                console.log(
-                  res.info.name
-                    .toLowerCase()
-                    .includes(searchText.toLowerCase()),
-                  res.info.name.toLowerCase(),
-                  searchText
-                );
                 return res.info.name
                   .toLowerCase()
                   .includes(searchText.toLowerCase());
               });
-              console.log("filterdRestaurant==>", filterdRestaurant);
               setFilterdRestaurant(filterdRestaurant);
             }}
           >
@@ -94,7 +87,6 @@ const Body = () => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4
               );
-              console.log("from filter");
               setFilterdRestaurant(filteredList);
             }}
           >

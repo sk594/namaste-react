@@ -18,7 +18,7 @@ const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
   const [userName, setUserName] = useState();
-  console.log("userName====>", userName);
+  // console.log("userName====>", userName);
   useEffect(() => {
     //api call
     const data = {

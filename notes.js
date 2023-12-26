@@ -132,4 +132,21 @@ import { useEffect } from "react";
     => Redux internal use Immer npm
 
     => Redux dev tool extension
+
+
+33. Setting up testing in our app =>
+    - Install React Testing Library
+    - Installed jest
+    - Installed Babel dependencies
+    - Configure Babel
+    - Configure Parcel Config file to disable default babel transpilation
+    - Jest configuration => npx jest --init
+    - Install jsdom library
+    - Install @babel/preset-react - to make JSX work in test cases
+    - Include @babel/preset-react inside my babel config
+    - Install @testing-library/jest-dom
+
+
+    - render, screen => @testing-library/react
+    - act => react-dom/test-utils
    */    

@@ -1,0 +1,81 @@
+{
+    "info": {
+        "id": "55887",
+        "name": "Rawat Mishthan Bhandar",
+        "cloudinaryImageId": "uzklu7r1dd7kc1lto5l5",
+        "locality": "Sindhi Camp",
+        "areaName": "Sindhi Camp",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+            "North Indian",
+            "Thalis",
+            "Chinese",
+            "Mughlai",
+            "Chaat",
+            "Punjabi",
+            "Desserts",
+            "Snacks",
+            "Rajasthani",
+            "Tandoor",
+            "Sweets",
+            "Indian",
+            "Beverages",
+            "Ice Cream",
+            "Italian",
+            "Pastas"
+        ],
+        "avgRating": 4.5,
+        "parentId": "167813",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "10K+",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 2.3,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25 mins",
+            "lastMileTravelString": "2.3 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2023-12-25 22:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-a725194b-57e9-4ea9-aec7-d26886e723a1"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/rawat-mishthan-bhandar-sindhi-camp-jaipur-55887",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
